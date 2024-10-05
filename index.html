@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>El Mehdi FATAHLLAH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <style>
+        .nav-link {
+            color: white;
+            transition: 0.7s;
+        }
+
+        .nav-link:hover {
+            color: rgb(14, 184, 251);
+            transition: color 0.7s linear;
+        }
+
+        .card {
+            box-shadow: 7px 5px 15px 2px rgb(14, 184, 251);
+            margin-top: 10%;
+        }
+
+        li {
+            margin-left: 20px;
+        }
+
+        #brand {
+            font-size: 25px;
+        }
+
+        body {
+            padding: 0 50px;
+        }
+
+        .social-icons a {
+            color: white;
+            transition: color 0.6s;
+        }
+
+        .social-icons a:hover {
+            color: rgb(14, 184, 251);
+            transition: color 0.6s;
+        }
+
+        .btn {
+            background-color: rgb(14, 184, 251);
+            color: black;
+            transition: 1s;
+        }
+
+        .btn:hover {
+            background-color: rgb(52, 58, 64);
+            box-shadow: 1px 1px 15px 2px rgb(14, 184, 251);
+            transition: 1s;
+        }
+        #brand {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-25px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg bg-dark mt-3 p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-light" id="brand" href="#">El Mehdi FATAHLLAH</a>
+            <button class="navbar-toggler" type="button" style="background-color: rgb(14, 184, 251);" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Portfolio.</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: rgb(14, 184, 251);" aria-current="page"
+                                href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="propos.html">À Propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projets.html">Projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-lg-6 m-auto">
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h4 class="card-title ">Bonjour c'est moi</h4>
+                        <h2 class="card-title">El Mehdi FATAHLLAH</h2>
+                        <h6 class="card-title">Et je suis un <span style="color: rgb(14, 184, 251);">Développeur Full
+                                Stack</span></h6>
+                        <div class="social-icons fs-3">
+                            <a href="https://www.facebook.com" target="_blank" class="m-1"><i
+                                    class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com" target="_blank" class="m-1"><i
+                                    class="bi bi-instagram"></i></a>
+                            <a href="https://www.linkedin.com" target="_blank" class="m-1"><i
+                                    class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com" target="_blank" class="m-1"><i class="bi bi-github"></i></a>
+                        </div>
+                        <div>
+                            <a class="btn mt-4" href="propos.html">À Propos de Moi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
