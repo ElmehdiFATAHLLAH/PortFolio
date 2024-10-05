@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>El Mehdi FATAHLLAH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+
+    <style>
+        .nav-link {
+            color: white;
+            transition: 0.7s;
+        }
+
+        .nav-link:hover {
+            color: rgb(14, 184, 251);
+            transition: color 0.7s linear;
+        }
+
+
+        li {
+            margin-left: 20px;
+        }
+
+        #brand {
+            font-size: 25px;
+        }
+
+        body {
+            padding: 0 50px;
+        }
+
+        .social-icons a {
+            color: white;
+            transition: color 0.6s;
+        }
+
+        .social-icons a:hover {
+            color: rgb(14, 184, 251);
+            transition: color 0.6s;
+        }
+
+        .btn {
+            background-color: rgb(14, 184, 251);
+            color: black;
+            transition: 1s;
+        }
+
+        .btn:hover {
+            background-color: rgb(52, 58, 64);
+            box-shadow: 1px 1px 15px 2px rgb(14, 184, 251);
+            transition: 1s;
+        }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 10%;
+        }
+
+        .card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 8px 20px rgba(14, 184, 251, 0.5);
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        .carousel-indicators [data-bs-target] {
+            background-color: #ff0000;
+        }
+
+        .carousel-indicators .active {
+            background-color: #00ff00;
+        }
+        #projets{
+            margin: 3% 0;
+        }
+        #brand {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-25px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg bg-dark mt-3 p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-light" id="brand" href="#">El Mehdi FATAHLLAH</a>
+            <button class="navbar-toggler" type="button" style="background-color: rgb(14, 184, 251);"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Portfolio.</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="propos.html">À Propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: rgb(14, 184, 251);" href="#">Projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+
+    <div class="container-fluid " id="projets">
+        <h3 class="text-center mb-4"><i>La Réservation des Ressources Universitaire</i></h3>
+        <div class="row">
+            <div class="col-lg-5">
+                <p class="text-justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum molestias ipsum vitae natus sit placeat aperiam similique omnis, sapiente provident quibusdam maxime officiis quisquam, corrupti quam voluptatem voluptatibus? Alias, omnis!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim ipsum aspernatur, repellendus fugit atque quos ea eius expedita nulla et velit, pariatur tempore iusto consequuntur ab assumenda molestiae, deleniti exercitationem.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat numquam sunt ullam praesentium deleniti qui veniam sequi repellendus maxime, aut nam amet sapiente. Unde, provident. Ullam odio reprehenderit temporibus.
+                </p>
+            </div>
+    
+            <div id="carouselExampleCaptions" class="carousel slide col-lg-7" data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                        aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+                        aria-label="Slide 9"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9"
+                        aria-label="Slide 10"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10"
+                        aria-label="Slide 11"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11"
+                        aria-label="Slide 12"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12"
+                        aria-label="Slide 13"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13"
+                        aria-label="Slide 14"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="14"
+                        aria-label="Slide 15"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="15"
+                        aria-label="Slide 16"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="16"
+                        aria-label="Slide 17"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="17"
+                        aria-label="Slide 18"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="18"
+                        aria-label="Slide 19"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="19"
+                        aria-label="Slide 20"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="20"
+                        aria-label="Slide 21"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="21"
+                        aria-label="Slide 22"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="22"
+                        aria-label="Slide 23"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="23"
+                        aria-label="Slide 24"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="24"
+                        aria-label="Slide 25"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="25"
+                        aria-label="Slide 26"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="26"
+                        aria-label="Slide 27"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="27"
+                        aria-label="Slide 28"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="28"
+                        aria-label="Slide 29"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="29"
+                        aria-label="Slide 30"></button>
+        
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="screen/1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="screen/2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="screen/3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/4.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/5.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/6.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/7.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/8.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/9.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/10.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/11.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/12.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/13.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/14.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/15.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/16.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/17.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/18.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/19.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/20.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/21.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/22.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/23.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/24.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/25.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/26.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/27.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/28.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/29.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="screen/30.png" class="d-block w-100" alt="...">
+                    </div>
+        
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
