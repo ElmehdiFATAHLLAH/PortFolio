@@ -126,15 +126,125 @@
             .social-icons a {
                 margin: 0 10px !important;
             }
-            #proposMoi{
+
+            #proposMoi {
                 margin-bottom: 20px;
                 font-size: 30px;
             }
         }
 
+
+        .btn {
+            animation: bouton 5s infinite ease-in-out;
+        }
+
+        @keyframes bouton {
+            0% {
+                background-color: #0481f6;
+            }
+
+            20% {
+                background-color: #329bfe;
+            }
+
+            40% {
+                background-color: #82bef7;
+            }
+
+            60% {
+                background-color: #0385fe;
+            }
+
+            80% {
+                background-color: #9cccfa;
+            }
+
+            100% {
+                background-color: #0481f6;
+            }
+        }
+
+        h4 {
+            animation: anim1 1s;
+        }
+
+        @keyframes anim1 {
+            0% {
+                transform: translateX(-500px);
+            }
+
+            100% {
+                transform: translateX(0px);
+            }
+        }
+
+        h2 {
+            animation: anim2 1300ms;
+        }
+
+        @keyframes anim2 {
+            0% {
+                transform: translateX(-500px);
+            }
+
+            100% {
+                transform: translateX(0px);
+            }
+        }
+
+        h6 {
+            animation: anim3 1600ms;
+        }
+
+        @keyframes anim3 {
+            0% {
+                transform: translateX(-500px);
+            }
+
+            100% {
+                transform: translateX(0px);
+            }
+        }
+
+        .social-icons {
+            animation: animIcon 3s forwards;
+        }
+
+        @keyframes animIcon {
+            0% {
+                transform: translateX(-500px);
+            }
+
+            100% {
+                transform: translateX(0px);
+            }
+        }
+        /*
+        .card{
+            animation: animCard 6s ease-out;
+        }
+        @keyframes animCard{
+            0% {
+            transform: translateY(-500px);
+            box-shadow: none;
+        }
+
+        60% {
+            transform: translateX(0px);
+            box-shadow: 1px 1px 15px 2px rgb(31, 187, 249);
+        }
+
+        100% {
+            transform: translateX(0px);
+            box-shadow: 1px 1px 15px 2px rgb(14, 184, 251);
+        }
+        } */
+
+
         .navbar-toggler-icon {
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
         }
+
     </style>
 </head>
 
@@ -151,7 +261,7 @@
                 aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title fs-1" id="offcanvasDarkNavbarLabel">Portfolio.</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    <button type="button" class="btn-close btn-close-white fs-1" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -185,10 +295,14 @@
                         <h6 class="card-title">Et je suis un <span style="color: rgb(14, 184, 251);">Développeur Full
                                 Stack</span></h6>
                         <div class="social-icons fs-1">
-                            <a href="https://www.instagram.com/elmehdi__fatahllah" target="_blank" class="m-1"><i class="bi bi-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/el-mehdi-fatahllah-3b41842b9/" target="_blank" class="m-1"><i class="bi bi-linkedin"></i></a>
-                            <a href="https://github.com/ElmehdiFATAHLLAH" target="_blank" class="m-1"><i class="bi bi-github"></i></a>
-                            <a href="https://x.com/ElMehdiFTH" target="_blank" class="m-1"><i class="bi bi-twitter"></i></a>
+                            <a href="https://www.instagram.com/elmehdi__fatahllah" target="_blank" class="m-1"><i
+                                    id="insta" class="bi bi-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/el-mehdi-fatahllah-3b41842b9/" target="_blank"
+                                id="linkedin" class="m-1"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/ElmehdiFATAHLLAH" target="_blank" id="git" class="m-1"><i
+                                    class="bi bi-github"></i></a>
+                            <a href="https://x.com/ElMehdiFTH" target="_blank" id="twitter" class="m-1"><i
+                                    class="bi bi-twitter"></i></a>
                         </div>
                         <div>
                             <a class="btn mt-4" id="proposMoi" href="propos.html">À Propos de Moi</a>
@@ -198,6 +312,8 @@
             </div>
         </div>
     </div>
+
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

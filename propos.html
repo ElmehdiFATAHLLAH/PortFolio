@@ -65,9 +65,11 @@
             transform: translateX(10px);
             box-shadow: 0 8px 20px rgba(14, 184, 251, 0.5);
         }
-        .text-justify{
+
+        .text-justify {
             text-align: justify;
         }
+
         #brand {
             opacity: 0;
             animation: fadeIn 10s infinite ease-in-out;
@@ -77,18 +79,23 @@
             0% {
                 opacity: 0.2;
             }
-            20%{
+
+            20% {
                 opacity: 0.6;
             }
-            40%{
+
+            40% {
                 opacity: 0.8;
             }
-            60%{
+
+            60% {
                 opacity: 1;
             }
-            80%{
+
+            80% {
                 opacity: 0.6;
             }
+
             100% {
                 opacity: 0.2;
             }
@@ -115,6 +122,7 @@
             h2 {
                 font-size: 50px;
             }
+
             h3 {
                 font-size: 46px;
             }
@@ -126,7 +134,8 @@
             h6 {
                 font-size: 34px;
             }
-            p{
+
+            p {
                 font-size: 30px;
             }
 
@@ -135,6 +144,62 @@
 
         .navbar-toggler-icon {
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .card {
+            animation: animCard 3s ease-out;
+        }
+
+        @keyframes animCard {
+            0% {
+                transform: translateX(-500px);
+                box-shadow: none;
+            }
+
+            50% {
+                transform: translateX(0px);
+                box-shadow: 1px 1px 15px 2px rgb(31, 187, 249);
+            }
+
+            100% {
+                transform: translateX(0px);
+            }
+        }
+
+        #age{
+            animation: animAge 2s;
+        }
+        @keyframes animAge{
+            0%{
+                transform: translateY(500px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+
+        #email{
+            animation: animEmail 2500ms;
+        }
+        @keyframes animEmail{
+            0%{
+                transform: translateY(500px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+
+        #adresse{
+            animation: animAdresse 3s;
+        }
+        @keyframes animAdresse{
+            0%{
+                transform: translateY(500px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
         }
     </style>
 </head>
@@ -146,20 +211,19 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span> 
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
                 aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title fs-1" id="offcanvasDarkNavbarLabel">Portfolio.</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    <button type="button" class="btn-close btn-close-white fs-1" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page"
-                                href="index.html">Accueil</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" style="color: rgb(14, 184, 251);" href="#">À Propos</a>
@@ -193,9 +257,9 @@
             </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-4" style="margin-top: 5%;">
-                <p style="border-bottom: solid 2px; padding: 10px ;">Age : 20 ans</p>
-                <p style="border-bottom: solid 2px; padding: 10px ;">Email : elmehdifatahllah@gmail.com</p>
-                <p style="border-bottom: solid 2px; padding: 10px ;">Adresse : Casablanca, Maroc</p>
+                <p style="border-bottom: solid 2px; padding: 10px ;" id="age">Age : 20 ans</p>
+                <p style="border-bottom: solid 2px; padding: 10px ;" id="email">Email : elmehdifatahllah@gmail.com</p>
+                <p style="border-bottom: solid 2px; padding: 10px ;" id="adresse">Adresse : Casablanca, Maroc</p>
             </div>
         </div>
     </div>
