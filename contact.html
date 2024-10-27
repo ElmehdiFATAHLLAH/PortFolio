@@ -135,9 +135,15 @@
             input{
                 font-size: 30px !important;
             }
+            textarea{
+                font-size: 30px !important;
+            }
             .btn{
                 font-size: 30px;
             }
+            .contact{
+            margin-top: 18% !important;
+        }
             
         }
 
@@ -170,12 +176,24 @@
         .navbar-toggler-icon {
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
         }
+
+        .navBarElement {
+            position: fixed;
+            top: 0;
+            padding-right: 8%;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            z-index: 10;
+        }
+        .contact{
+            margin-top: 7%;
+        }
     </style>
 </head>
 
 <body class="bg-dark text-white">
-    <nav class="navbar navbar-expand-lg bg-dark mt-3 p-3">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-dark mt-3 ">
+        <div class="container-fluid navBarElement bg-dark">
             <a class="navbar-brand fw-bold text-light" id="brand" href="#">El Mehdi FATAHLLAH</a>
             <button class="navbar-toggler" type="button"
                 data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
@@ -208,7 +226,7 @@
             </div>
     </nav>
 
-    <div>
+    <div class="contact">
         <h3 class="text-center mt-3">Contactez-Moi</h3>
     </div>
     <div class="container-fluid mb-5">

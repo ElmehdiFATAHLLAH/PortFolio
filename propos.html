@@ -201,12 +201,24 @@
                 transform: translateY(0px);
             }
         }
+
+        .navBarElement {
+            position: fixed;
+            top: 0;
+            padding-right: 8%;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            z-index: 10;
+        }
+        .about{
+            margin-top: 7% !important;
+        }
     </style>
 </head>
 
 <body class="bg-dark text-white">
-    <nav class="navbar navbar-expand-lg bg-dark mt-3 p-3">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-dark mt-3">
+        <div class="container-fluid navBarElement bg-dark">
             <a class="navbar-brand fw-bold text-light" id="brand" href="#">El Mehdi FATAHLLAH</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
@@ -239,7 +251,7 @@
             </div>
     </nav>
 
-    <div class="container-fluid mt-3">
+    <div class="container-fluid mt-3 about">
         <div class="row">
             <div class="col-lg-7">
                 <div class="card bg-dark text-white">

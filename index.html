@@ -131,6 +131,9 @@
                 margin-bottom: 20px;
                 font-size: 30px;
             }
+            .box{
+            margin-top: 20% !important;
+        }
         }
 
 
@@ -219,6 +222,19 @@
                 transform: translateX(0px);
             }
         }
+
+        .navBarElement {
+            position: fixed;
+            top: 0;
+            padding-right: 8%;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            z-index: 10;
+        }
+
+        .box{
+            margin-top: 8% !important;
+        }
         /*
         .card{
             animation: animCard 6s ease-out;
@@ -245,12 +261,13 @@
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
         }
 
+
     </style>
 </head>
 
 <body class="bg-dark text-white mb-5">
-    <nav class="navbar navbar-expand-lg bg-dark mt-3 p-3">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-dark mt-3">
+        <div class="container-fluid navBarElement bg-dark">
             <a class="navbar-brand fw-bold text-light" id="brand" href="#">El Mehdi FATAHLLAH</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
@@ -285,7 +302,7 @@
     </nav>
 
 
-    <div class="container-fluid mt-3">
+    <div class="container-fluid mt-3 box">
         <div class="row">
             <div class="col-lg-6 m-auto">
                 <div class="card bg-dark text-white">
